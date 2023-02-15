@@ -58,6 +58,18 @@ bsub.py --queue long --threads 20 60 busco_ov_v4_nematoda_odb10 \
 bsub.py --queue long --threads 20 60 busco_ov_v4_eukaryota_odb10 \
     "busco --in ONCHO_V4.ref.fa --out BUSCO_ov_v4_genome_eukaryota_odb10 --mode genome --lineage_dataset /nfs/users/nfs_s/sd21/lustre_link/databases/busco/eukaryota_odb10 --cpu 20 -f -r"
 
+
+bsub.py --queue long --threads 20 60 busco_ov_v3_nematoda_odb10 \
+    "busco --in onchocerca_volvulus.PRJEB513.WBPS17.genomic.fa --out BUSCO_ov_v3_genome_nematoda_odb10 --mode genome --lineage_dataset /nfs/users/nfs_s/sd21/lustre_link/databases/busco/nematoda_odb10 --cpu 20 -f -r"
+
+
+bsub.py --queue long --threads 20 60 busco_ov_v3_eukaryota_odb10 \
+    "busco --in onchocerca_volvulus.PRJEB513.WBPS17.genomic.fa --out BUSCO_ov_v3_genome_eukaryota_odb10 --mode genome --lineage_dataset /nfs/users/nfs_s/sd21/lustre_link/databases/busco/eukaryota_odb10 --cpu 20 -f -r"
+
+
+
+
+
 ```
 
 
