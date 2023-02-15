@@ -47,4 +47,9 @@ ggplot() +
      labs(title="A", colour="Region", shape="Country") +
      scale_colour_manual(values = region_colours, breaks=c('NSW', 'QLD', 'PAV', 'ARK', 'GEO', 'ILL', 'LOU', 'MCH', 'MIP', 'TEN', 'TEX'))
 
+ggsave("diro_samples_map.pdf", height=5, width=7, useDingbats=FALSE)
+ggsave("diro_samples_map.png")
+
 ```
+
+![](../04_analysis/diro_samples_map.png)
